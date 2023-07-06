@@ -1,5 +1,6 @@
 package com.assignment.page;
 
+
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,13 @@ public class LoginBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demoqa.com/");
 		driver.manage().window().maximize();
+	}
+	public void initialization_module4() {
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("http://demo.guru99.com/V4/");
+		driver.manage().window().maximize();
+		
 	}
 	public void teardown() {
 		driver.close();
