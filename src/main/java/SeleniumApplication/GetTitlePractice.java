@@ -12,7 +12,7 @@ public class GetTitlePractice {
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.automationtesting.in/Windows.html");
-		driver.switchTo()
+		driver.switchTo();
 		
 		
 	}
